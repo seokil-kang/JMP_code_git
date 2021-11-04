@@ -1,0 +1,5 @@
+Medium Scale New Keynesian model specification
+1. sample period: 1960Q1 to 2006Q4
+2. internal habit formation
+3. average debt duration: 4*5
+4. debt to gdp target: 0.8
