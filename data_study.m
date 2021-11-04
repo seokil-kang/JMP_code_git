@@ -208,7 +208,7 @@ date_quarterly = date_quarterly_full(2:end);
 lnps_account = [nan((find(date_quarterly == date_ps(1))-1),1); lnps_account; nan(length(date_quarterly)-find(date_quarterly == date_ps(end)),1)];
 
 % full sample in level
-y_full = [lny(2:end) lnc(2:end) lni(2:end) lnw(2:end) lnn(2:end) lnb(2:end) lnps_identity lng(2:end) lnz(2:end) lnp(2:end) FFR(2:end) HPR(2:end) lnx(2:end) lnps_account];
+y_full = [lny(2:end) lnc(2:end) lni(2:end) lnw(2:end) lnn(2:end) lnb(2:end) lnps_identity lng(2:end) lnz(2:end) diff(lnp) FFR(2:end) HPR(2:end) lnx(2:end) lnps_account];
 % full sample differenced
 dy_full = [diff(lny) diff(lnc) diff(lni) diff(lnw) lnn(2:end) diff(lnb) lnps_identity diff(lng) diff(lnz) diff(lnp) FFR(2:end) HPR(2:end) lnx(2:end) lnps_account];
 % record differenced variables
